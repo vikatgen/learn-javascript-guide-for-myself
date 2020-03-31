@@ -1,0 +1,72 @@
+# Variables naming
+
+_Variable names are known as identifiers in Javascript._
+
+- Variable names can consist only of letter (a-z), numbers (0-9), dollar sign symbol (\$) and underscores (\_).
+- Variable names cannot contain any whitespace characters (tabs or spaces).
+- Numbers cannot begin the name of any variable.
+- There are several reserved keywords which cannot be used as the name of a variable.
+- Variable names are case sentsitive.
+- Good and practical use of variable names is a method called camelCase.
+
+# Scoping
+
+- Answers to question, where are your variables available for you!
+- Scope determines the accessibility (visibilty) of these variables.
+- In Javascript there are two types of scope => Local scope vs. Global scope.
+
+## Global Scope
+
+- Global variable is available everywhere. Global is not in function etc. Available outside of the {} symbols
+- 'var' variables are attached to window. Thats because we should use let and const.
+- It is not good practise to make global variables.
+- Variables declared outside of functions, becomes Global variables.
+- A global variable has a global scope. All scripts and functions on a web page can access it.
+- There is only one Global scope throughou a Javascript document. A variable is in the Global scope if it is defined outside of a function (outside of a block)
+
+## Variable inside Function Scope
+
+- When variables are created inside a function, are only available in the function. Not outside.
+- { } => are like fences, they wont let variables out!
+- Functions can take variables in outside of function. Function goes always level higher, if there is no variables declared inside functions. Good practise is do not use same naming for variables.
+- Variables declared within a function, become LOCAL to the function
+- local variables can only be accessed from within the function
+- Since local variables are only recognized inside their functions, variables with the same name can be used in different functions
+- Local variables are created when a function starts, and deleted when the function is completed.
+- Function arguments (parameters) work as local variables inside functions.
+
+## Blocks Scoped
+
+- Variables are scoped differently. (let, const, var).
+- { } => are named as blocks. For example they are used in if statements.
+- They are like gates, they keep variables in. When you need the variables to be available
+  outside of blocks, just declare the variable before the blocks.
+- There are multilevel scoping with blocks, where if statements can be inside functions. There we have multilevel scoping, be careful to know where your variables are available at.
+- In for-loops there is good practise to use let i = 0. var will be available outside of the loop.
+- Just remember to use const by default, let when you need and dont use var (whenever there is some usecase for It.)
+- var variables are function scoped and let,const are block scoped.
+- Variables declared within a block, become LOCAL to the block
+
+## Function Scoped
+
+- Function scoping works exatly the same way as variable scoping.
+- Functions are scoped to parent function.
+- This is also referred as Closure.
+
+# Hoisting
+
+- No matter where variables are declared within a particular scope, all variable declarations are moved to the top of their scope (global or local).
+- Hoisting is done by Javascript feature called interpreter. Once again, interpreter moves the functions and variables declarations to the top of their containing scope.
+- Simply this means that any declared variables, whenever they occur, are processed before any code is executed.
+- on file functions are hoisted first, then variables.
+- Declare all your variables at the top of their scope (at top of the global scope or at the top of the function scope.)
+
+## Functions hoisting
+
+- All the functions are moved to the top of your Javascript file at compiled.
+
+## Variable hoisting
+
+- While compiling the file, Javascript variables are moves to the top of the file.
+- First, variables will be declared without values.
+- Later on the file, compiler will update declared variables with their values.
