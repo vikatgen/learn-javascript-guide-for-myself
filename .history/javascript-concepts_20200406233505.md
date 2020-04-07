@@ -5,6 +5,6 @@
 - [ ] Keyword _this_.
 - [ ] The power of Functions. (Functions are first class => Closures.)
 - [ ] Programming type - The Namespace / Module Pattern.
-- [ ] Javascript Reference vs Primitive values/types. (Mutable and immutable values).
+- [ ] Javascript Reference vs Primitive values/types.
 
 [Back to homepage](/README.md)

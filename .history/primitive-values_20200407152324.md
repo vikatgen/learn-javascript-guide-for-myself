@@ -58,16 +58,4 @@ let person = {
 let hobbies = ["Camping", "Outdoor activites"];
 ```
 
-# What is the difference, what is the point?
-
-_It is related to memory management._
-
-- Behind the scene Javascript has to store the values you assign to properties or variables in memory.
-- Javascript knows two types of memory. The Stack (Primitive values) and The Heap (reference values).
-
-#### To make a short summary
-
-- _The Stack_ is an easy-to-access memory that simply manages its items as a well stack. This means only items witch size is known in advanced can go onto the stack. This is the case for primitive types. (String, number, boolean...).
-- _The Heap_ is simply a memory for items of which you can´t pre-determine the exact size and structure. Since arrays and objects can be mutable (changeable), they have to go to _The Heap_ memory therefore.
-
 [Back to homepage](/README.md)
